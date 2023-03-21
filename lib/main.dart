@@ -71,7 +71,8 @@ class _MyHomePageState extends State<MyHomePage> {
       ),
       body: Responsive(
         mobileBody: MymobileBody(
-
+          userInput: userinput,
+          Answer: answer,
         ),
         desktopBody: MydesktopBody(
 
