@@ -1,11 +1,15 @@
 import 'package:flutter/material.dart';
 
 
-
-class MymobileBody extends StatelessWidget {
+class MymobileBody extends StatefulWidget{
   final String userInput;
-  const MymobileBody({super.key, required this.userInput, required this.Answer});
+  const MymobileBody({super.key, required this.userInput});
 
+  @override
+  State<MymobileBody> createState() => _MymobileBodyState();
+}
+
+class _MymobileBodyState extends State<MymobileBody> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -29,15 +33,14 @@ class MymobileBody extends StatelessWidget {
                     padding: EdgeInsets.all(10),
                     alignment: Alignment.centerRight,
                     child: Text(
-                      Answe
-                      ),
+                      answer
                     ),
-                  )
+                  ),
                 ],
-              ),
-            ),
-          ),
-        ],
+              )
+            )
+          )
+        ]
       ),
     );
   }
